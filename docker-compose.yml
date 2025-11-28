@@ -1,0 +1,13 @@
+version: '3'
+services:
+  frontend:
+    image: lohi/shiva:latest
+    ports:
+      - "80:80"
+    container_name: frontend
+
+  backend:
+    image: lohi/sai:latest
+    ports:
+      - "3000:3000"
+    container_name: backend
